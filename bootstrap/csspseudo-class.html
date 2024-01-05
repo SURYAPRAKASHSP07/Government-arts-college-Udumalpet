@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* p::selection{
+        background: red;
+        color: yellow;
+      }
+
+      input[type = "text"]{
+        display: block;
+        margin: 10px;
+      }
+      label [for="name"]{
+        display: block;
+      }
+      input[type = "text"]{
+        border: 1px solid blue;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      input:disabled{
+        background-color: rgb(128, 0, 124);
+        color: white;
+      }
+      p[class |= "para"]{
+        color: red;
+      }
+      input[type = "radio"]:checked + label{
+        color: rgb(30, 109, 2);
+      }
+      input[type = "radio"]:not(:checked) + label{
+        color: rgb(183, 3, 3);
+      } */
+/* 
+      textarea:placeholder-shown {
+        border-color: red;
+      }
+      textarea:not(placeholder-shown) {
+        border-color: rgb(0, 255, 4);
+      }
+      /* input:focus{
+        border-color: blue;
+        padding: 10px;
+      } */
+      /* input[type = "email"]:invalid{
+        border-color: red;
+      }
+      input[type = "email"]:valid{
+        border-color: green;
+      }
+      input:required{
+        border-color: red;
+      }
+      input:optional{
+        border-color: rgb(0, 255, 4);
+    }
+    input:read-only{
+        background-color: brown;
+    }
+    input:read-write{
+        background-color: rgb(112, 165, 91);
+    } 
+    input[type="number"]:in-range{
+        color: green;
+    }
+    input[type="number"]:out-of-range{
+        color: rgb(217, 0, 0);
+    }
+
+p:target{
+    background-color: black;
+    color: white;
+}*/
+
+p:nth-child(odd){
+    background-color: cornflowerblue;
+}
+p:nth-child(even){
+    background-color: rgb(237, 232, 100);
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+.para:nth-child(odd){
+    background-color: rgb(237, 148, 100);
+}
+p:nth-of-type(1){
+    background-color: pink;
+}
+</style>
+
+</head>
+<body>
+    <a href="#home">Home</a>
+    <a href="#info">info</a>
+<div class="one">
+    <p id="home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+
+    <p id="home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+
+    <p id="home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+<div class="para">
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+</div>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+    <p id="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo amet vitae corporis quaerat doloremque atque perspiciatis cum officia ipsa quas id ipsum, autem incidunt nobis veniam nisi harum ullam eum?</p>
+</div>
+
+    <!-- <h3>header</h3>
+    <p class="para-page">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nulla, officia aspernatur quis assumenda animi dolores ullam repellat ipsum eos? Quos, cumque. Saepe tempora, itaque aperiam rerum vel voluptas asperiores.</p>
+
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nulla, officia aspernatur quis assumenda animi dolores ullam repellat ipsum eos? Quos, cumque. Saepe tempora, itaque aperiam rerum vel voluptas asperiores.</p>
+
+    <p class="tittle-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nulla, officia aspernatur quis assumenda animi dolores ullam repellat ipsum eos? Quos, cumque. Saepe tempora, itaque aperiam rerum vel voluptas asperiores.</p>
+
+    <p class="para-tittle check">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nulla, officia aspernatur quis assumenda animi dolores ullam repellat ipsum eos? Quos, cumque. Saepe tempora, itaque aperiam rerum vel voluptas asperiores.</p> -->
+
+    <!-- <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" disabled>
+
+    <label for="name">age</label>
+    <input type="number" placeholder="Enter your age">
+
+    <label for="name">address</label>
+    <input id="address" type="text" placeholder="Enter your address" disabled>
+
+    <label for="">What is Exam Result</label><br>
+    <input type="radio" name="result" form="pass">
+    <label for="pass" checked>Pass</label>
+
+    <input type="radio" name="result" form="fail">
+    <label for="fail">Fail</label> -->
+
+    <!-- <input type="text" placeholder="Fist Name" required>
+    <input type="text" placeholder="Last Name">
+    <input type="text" placeholder="age">
+    <input type="email" placeholder="Email">
+
+    <textarea placeholder="Share Your Thoughts With Us..." cols="30" rows="10"></textarea>
+
+    <input type="text" placeholder="Fist Name" readonly>
+    <input type="text" placeholder="Last Name">
+
+    <input type="number" min="1" max="5"/>
+    <input type="number" min="1" max="5"/> -->
+</body>
+</html>

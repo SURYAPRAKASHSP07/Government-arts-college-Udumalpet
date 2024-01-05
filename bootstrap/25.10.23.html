@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <h2>List group and list items</h2>
+
+    <div class="container">
+        <ul class="list-group ">
+            <li class="list-group-item d-flex justify-content-between align-items-center">Mails
+                <span class="badge badge-pill bg-danger text-light">23</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Messages
+                <span class="badge badge-pill bg-danger text-light">6</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Spam Msgs
+                <span class="badge badge-pill bg-danger text-light">31</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Junk Files
+                <span class="badge badge-pill bg-danger text-light">17</span>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <ul class="list-group">
+        <li class="list-group-item active">List-item-one</li>
+        <li class="list-group-item disabled">List-item-two</li>
+        <li class="list-group-item">List-item-three</li>
+        <li class="list-group-item">List-item-four</li>
+        <li class="list-group-item">List-item-five</li>
+    </ul>
+    <hr>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-warning active">List-item-one</li>
+        <li class="list-group-item list-group-item-info disabled">List-item-two</li>
+        <li class="list-group-item list-group-item-danger">List-item-three</li>
+        <li class="list-group-item list-group-item-dark">List-item-four</li>
+        <li class="list-group-item list-group-item-primary">List-item-five</li>
+        <li class="list-group-item list-group-item-success">List-item-six</li>
+    </ul>
+    <hr>
+
+    <h2>pagination</h2>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <br>
+
+    <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <br>
+    <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <hr>
+
+    <h2>progress-bar</h2>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;">
+                70%</div>
+        </div>
+        <br>
+
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar" style="width: 20%;">Photos 20%</div>
+            <div class="progress-bar bg-dark" style="width: 30%;">Videos 30%</div>
+            <div class="progress-bar bg-success" style="width: 20%;">Download 20%</div>
+            <div class="progress-bar bg-warning" style="width: 20%;">Photos</div>
+            <div class="progress-bar bg-light text-dark" style="width: 20%;">Remaining</div>
+        </div>
+
+        <hr>
+        <h2>btn-groups</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-warning">Apple</button>
+            <button type="button" class="btn btn-warning">SamSung</button>
+            <button type="button" class="btn btn-warning">Apple</button>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">Apple</button>
+            <button type="button" class="btn btn-info">SamSung</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Version-1</a></li>
+                    <li><a class="dropdown-item" href="#">Version-2</a></li>
+                    <li><a class="dropdown-item" href="#">Version-3</a></li>
+                    <li><a class="dropdown-item" href="#">Version-4</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-success">Apple</button>
+            <button type="button" class="btn btn-success">SamSung</button>
+            <button type="button" class="btn btn-success">Apple</button>
+        </div>
+        <hr>
+        <h2>Alert and alert-links</h2>
+        <p class="alert alert-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit..<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-info">Lorem ipsum, doQuod qui molestiae beatae inventore,<a href="#" class="alert-link">
+                Click
+                Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-heading alert-success">Lorem ipsum, d Quod qui molestiae beatae inventore, praesentium
+            ullam dicta
+            repellat.<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-warning">Lorem ipsum, d Quod qui molestiae beatae inventore, praesentium ullam dicta
+            repellat.<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-secondary">Lorem ip elit. Quod qui molestiae beatae inventore, praesentium ullam dicta
+            repellat.<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-primary">Lorem ipsum, d Quod qui molestiae beatae inventore, praesentium ullam dicta
+            repellat.<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <p class="alert alert-light">Lorem ipsum, doQuod qui molestiae beatae inventore, praesentium ullam dicta
+            repellat.<a href="#" class="alert-link"> Click Here to Read The Alert Msg</a></p>
+
+        <hr>
+        <p>border radious (Jumpotron)</p>
+        <p class="bg-primary text-light p-3 mt-3 text-justify rounded">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.
+            Voluptas voluptatum adipisci voluptate voluptates, placeat ullam quia, aliquid voluptatem iure earum aut at?
+            Eligendi repellendus voluptates facilis quam. Ad, doloremque soluta?</p>
+
+        <hr>
+        <p>
+        <pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error beatae eius voluptatem repellendus. Illo at illum voluptatibus eum deserunt porro neque nostrum libero expedita nobis? Laboriosam veniam quia aperiam? Quo? ipsum dolor, sit amet consectetur adipisicing elit. Error beatae eius voluptatem repellendus. Illo at illum voluptatibus eum deserunt porro neque nostrum libero expedita nobis? Laboriosam veniam quia aperiam? Quo?</pre>
+        </p>
+
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iste odio aut consectetur amet natus
+            eveniet neque dolorum tempora molestiae quasi labore libero harum, suscipit repellendus blanditiis enim et
+            beatae?
+        <footer class="blockquote"> World Health Organizations</footer>
+        </p>
+        <hr>
+
+
+        <p>Codes in Bootstrap</p>
+        <p>This Tags are HTML tags <code>Span</code>,<code>Div</code>,<Code>abb</Code></p>
+        <hr>
+
+        <h6>KeyBoard</h6>
+        <p>Use <kbd>Ctrl+S</kbd> To save files</p>
+        <hr>
+
+        <h6>Abbrevation</h6>
+        <p><abbr title="World Trade Oraganization">WHO</abbr> is started in 1948</p>
+        <hr>
+        <!-- H1 To H6 tags -->
+        <p class="h1">paragraph tag as h1</p>
+        <p class="h2">paragraph tag as h2</p>
+        <p class="h3">paragraph tag as h3</p>
+        <p class="h4">paragraph tag as h4</p>
+        <p class="h5">paragraph tag as h5</p>
+        <p class="h6">paragraph tag as h6</p>
+        <p class="h6"><small>Small</small> Text</p>
+
+        <!-- Dispaly classes -->
+        <p>Welcome Surya Prakash
+            <span class="display-6">(Developer)</span>
+        </p>
+
+        <h1 class="display-1">Display</h1>
+        <h1 class="display-2">Display</h1>
+        <h1 class="display-3">Display</h1>
+        <h1 class="display-4">Display</h1>
+        <h1 class="display-5">Display</h1>
+        <h1 class="display-6">Display</h1>
+
+
+
+    </div>
+
+
+
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="js/jquery.min.js">
+</body>
+
+</html>

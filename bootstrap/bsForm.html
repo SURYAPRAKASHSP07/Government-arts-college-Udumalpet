@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <!-- form group and control -->
+<div class="container mt-4">
+    <form action="#">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title text-light text-warning bg-dark p-2 text-center">Personnnal Details
+                </div>
+                <div class="form-group mb-2">
+                    <label for="name" class="mb-2">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Name" required />
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="number" class="mb-2">Phone number</label>
+                    <input type="number" class="form-control" placeholder="Phone number" />
+                </div>
+                <!-- input-group-prepend -->
+                <div class="form-group mb-2">
+                    <label for="email" class="mb-2">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="email" placeholder="example@gmail.com" name="email" class="form-control">
+                    </div>
+                </div>
+                <!-- input-group-append -->
+                <div class="form-group mb-2">
+                    <label for="Money" class="mb-2">Exchange value</label>
+                    <div class="input-group">
+                        <input type="number" placeholder="Enter Amount" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">$</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="gender" class="form-check mb-2">Gender</label>
+                    <input class="ml-4" type="radio" name="gender" id="gender" value="Male"> Male
+                    <input class="ml-2" type="radio" name="gender" id="gender" value="femal"> Female
+                    <input class="ml-2" type="radio" name="gender" id="gender" value="others"> Others
+                </div>
+
+                <div class="form-group input mb-2">
+                    <label for="name" class="mb-2">Enter a message</label>
+                    <textarea name="message" class="form-control" id="message" rows="5"
+                        placeholder="Share your thought's with Us"></textarea>
+                </div>
+
+                <div class="form-group mb-2">
+                    <input type="checkbox" class="form-check-inline form-check-label">
+                    <label for="termsandconditions" class="text-center mb-2">I Agree the
+                        <a href="#modalpage" data-bs-toggle="modal" data-bs-target="#modalpage">trems and conditions</a>
+                    </label>
+                </div>
+
+                <div class="form-group mb-2">
+                    <button class="btn btn-outline-primary justify-content-center">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalpage">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Terms and conditions
+                    <button class="border-0 border-top" data-bs-toggle="modal"><span>&times;</span></button>
+                </div>
+            </div>
+            <div class="media-body">
+                <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, fugiat quos quis
+                    harum totam suscipit quae porro? Sapiente libero aliquid possimus dolore expedita reiciendis dolorum
+                    necessitatibus quod vero. Aspernatur
+                    <!-- scroll modal -->
+                    <!-- expedita, quia molestiae sapiente consectetur nesciunt eaque nam repellendus, rerum perspiciatis similique autem odit nemo quibusdam, recusandae id minima necessitatibus aliquam distinctio sit a ex deleniti aut! Vel, ea soluta placeat error nulla aspernatur? Voluptatibus, assumenda possimus, recusandae dolore nihil adipisci soluta nesciunt quae sed, quasi culpa neque consequuntur ea error! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam ut accusantium culpa facilis recusandae sunt minus repudiandae, maiores eos dolores omnis expedita sit excepturi. Velit aspernatur voluptatibus corrupti hic laboriosam labore sint incidunt atque vel quidem obcaecati ab est blanditiis maiores delectus saepe facilis nemo, asperiores recusandae, eos excepturi reprehenderit quo voluptatem. Perspiciatis eum itaque quis eligendi consectetur pariatur non possimus debitis, reiciendis atque quam rem, eveniet vero nemo recusandae animi fugit voluptatibus quibusdam nesciunt expedita magni! Fugiat eius rerum ratione officiis voluptate adipisci quia, voluptatibus repellat. Blanditiis modi quis iste temporibus molestiae, consectetur reprehenderit iure maiores voluptatem suscipit aliquam commodi ratione cupiditate, non natus fugiat, cumque sint dolorum alias officiis incidunt praesentium enim eius amet. Saepe expedita officiis reiciendis repellendus eveniet totam accusamus incidunt adipisci quis natus itaque dolorum perferendis eius maiores minima minus, cum nulla iure voluptatum omnis exercitationem commodi! Dolorem molestiae ullam veritatis, eos, aut, adipisci suscipit doloribus necessitatibus aliquam magni nihil! Commodi libero, ipsa id unde nostrum mollitia nisi beatae doloribus, odit hic accusamus? Dignissimos natus omnis quasi placeat reiciendis et, aut maxime necessitatibus iste molestiae rem doloremque magnam similique porro cum odit odio fuga adipisci distinctio aliquid inventore est vitae accusamus? Sit rem nihil saepe? -->
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <form action="#">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title text-light text-warning bg-dark p-2 text-center">Personnnal Details
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="name" class="mb-2">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" id="name" class="form-control" placeholder="Name" required />
+
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <label for="number" class="mb-2">Phone number</label>
+                                <input type="number" class="form-control" placeholder="Enter your phone number" />
+                            </div>
+                            <!-- input-group-prepend -->
+                            <div class="form-group mb-2">
+                                <label for="email" class="mb-2">Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="email" placeholder="example@gmail.com" name="email"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <button class="btn btn-outline-primary justify-content-center">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn btn-danger mt-5" type="button" data-bs-toggle="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        
+        .col,.col-6,.col-8,.col-auto{
+            background-color: red;
+            padding: 5px;
+            border: 3px solid black;
+            text-align: center;
+        }
+        img{
+            margin-bottom: 20px;
+        }
+        .sample .sample2{
+            background-color: blue;
+            padding: 5px;
+        }
+        .container-fd{
+            height: 300px;
+            background-color: burlywood;
+        }
+        
+body::before{
+    content: "XS";
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 20px;
+}
+@media (min-width: 576px) {
+    body::before{
+        content: "SM";
+    }
+}
+@media (min-width: 768px) {
+    body::before{
+        content: "MD";
+    }
+}
+@media (min-width: 992px) {
+    body::before{
+        content: "LD";
+    }
+}
+@media (min-width: 1200px) {
+    body::before{
+        content: "XL";
+    }
+}
+@media (min-width: 1400px) {
+    body::before{
+        content: "XXL";
+    }
+}
+        </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="sample">1</div>
+            </div>
+            <div class="col">
+                <div class="sample">2</div>
+            </div>
+            <div class="col">
+                <div class="sample">3</div>
+            </div>
+            <div class="col">
+                <div class="sample">4</div>
+            </div>
+        </div>
+    </div>
+    <!-- grid property -->
+        <div class="container-fluid">
+            <div class="row my-3">
+                <div class="col-auto">box-1</div>
+                <div class="col offset-lg-2">box-2</div>
+                <div class="col offset-sm-2">box-3</div>
+                <div class="col">box-4</div>
+                <div class="col">box-5</div>
+            </div>
+             <div class="row my-3">
+                <div class="col-6 offset-lg-6">box-1</div>
+                <div class="col">box-2</div>
+                <div class="col">box-3</div>
+            </div>
+             <div class="row my-3">
+                <div class="col-6">box-1</div>
+                <div class="col-6">box-2</div>
+            </div>
+             <div class="row my-3 ">
+                <div class="col">box-1</div>
+                <div class="col">box-2</div>
+                <div class="col">box-3</div>
+                <div class="col">box-4</div>
+                <div class="col">box-5</div>
+                <div class="col">box-6</div>
+            </div>
+            <div class="row my-3">
+                <div class="col col-lg-4">box-1</div>
+                <div class="col col-xl-1">box-2</div>
+            </div>
+            <div class="row my-3">
+                <div class="col">box-1</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="sample">
+                        sample
+                        <div class="sample2">
+                            sample2
+                        </div>
+                    </div>
+                    <div class="sample">
+                        sample
+                        <div class="sample2">
+                            sample2
+                        </div>
+                    </div>
+                    <div class="sample">
+                        sample
+                        <div class="sample2">
+                            sample2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+
+        <!--text property-->
+
+        <div class="container-2">
+            <h5>text-warning</h5>
+            <p class="text-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-info</h5>
+            <p class="text-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-success</h5>
+            <p class="text-success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-normal</h5>
+            <p class="text-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-danger</h5>
+            <p class="text-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-primary</h5>
+            <p class="text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <h5>text-secondary</h5>
+            <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+
+            <p class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <p class="bg-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <p class="bg-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <p class="bg-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <p class="bg-success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+            <p class="bg-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+
+            <p><i class="lead">surya</p>
+            <p><i class="small">surya</p>
+
+                <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-lowercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+                <p class="text-capitalize">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusantium quas quos culpa dolorem debitis velit sequi earum natus eius.</p>
+
+<!--table property-->
+<h2>table-bordered</h2>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Mail</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>surya</td>
+                        <td>22</td>
+                        <td>surya@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ram</td>
+                        <td>25</td>
+                        <td>ram@gmail.com</td>
+                        <td>0987654521</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>raj</td>
+                        <td>32</td>
+                        <td>raj@gmail.com</td>
+                        <td>0945654321</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>kanagu</td>
+                        <td>20</td>
+                        <td>kanagu@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>lyla</td>
+                        <td>21</td>
+                        <td>lyla@gmail.com</td>
+                        <td>0987464321</td>
+                    </tr>
+                </table>
+
+<h2>table-striped</h2>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Mail</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>surya</td>
+                        <td>22</td>
+                        <td>surya@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ram</td>
+                        <td>25</td>
+                        <td>ram@gmail.com</td>
+                        <td>0987654521</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>raj</td>
+                        <td>32</td>
+                        <td>raj@gmail.com</td>
+                        <td>0945654321</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>kanagu</td>
+                        <td>20</td>
+                        <td>kanagu@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>lyla</td>
+                        <td>21</td>
+                        <td>lyla@gmail.com</td>
+                        <td>0987464321</td>
+                    </tr>
+                </table>
+
+<h2>table-hover</h2>
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Mail</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>surya</td>
+                        <td>22</td>
+                        <td>surya@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ram</td>
+                        <td>25</td>
+                        <td>ram@gmail.com</td>
+                        <td>0987654521</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>raj</td>
+                        <td>32</td>
+                        <td>raj@gmail.com</td>
+                        <td>0945654321</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>kanagu</td>
+                        <td>20</td>
+                        <td>kanagu@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>lyla</td>
+                        <td>21</td>
+                        <td>lyla@gmail.com</td>
+                        <td>0987464321</td>
+                    </tr>
+                </table>
+<h2>table-condensed</h2>
+<div class="container3 table-responsive">
+                <table class="table table-condensed">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Mail</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>surya</td>
+                        <td>22</td>
+                        <td>surya@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ram</td>
+                        <td>25</td>
+                        <td>ram@gmail.com</td>
+                        <td>0987654521</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>raj</td>
+                        <td>32</td>
+                        <td>raj@gmail.com</td>
+                        <td>0945654321</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>kanagu</td>
+                        <td>20</td>
+                        <td>kanagu@gmail.com</td>
+                        <td>0987654321</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>lyla</td>
+                        <td>21</td>
+                        <td>lyla@gmail.com</td>
+                        <td>0987464321</td>
+                    </tr>
+</div>
+                </table>
+        </div>
+
+<!-- imgage in bootstrap -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- <img class="img-responsive" src="cap.jpg" alt="img">
+            <img class="card-img-bottom" src="cap.jpg" alt="img">-->
+            <img class="img rounded-circle"     src="cap.jpg" alt="img"> 
+            <img class="img-thumbnail"  src="cap.jpg" alt="img">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* .breadcrumb-item + .breadcrumb-item::before{
+            content: ">>";
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="dropDownItem" data-target="#dropDownItem" class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Contact Us</button>
+        <div class="dropdown-menu">
+            <a href="#dropDownItem" class="dropdown-item">X</a>
+            <a href="#dropDownItem" class="dropdown-item">Email</a>
+            <a href="#dropDownItem" class="dropdown-item">Facebook</a>
+            <a href="#dropDownItem" class="dropdown-item">LinkedIn</a>
+            <a href="#dropDownItem" class="dropdown-item">WhatsApp</a>
+        </div>
+    </div>
+    
+    <!-- carousel -->
+    <div class="container mt-5">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls" data-slide-to="0"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="/vlcsnap-2019-11-30-03h39m08s968.png" alt="first img"  class="d-block w-100">
+    
+                    <div class="carousel-caption">
+                        <h1>First Slide</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem praesentium quasi officia. Sed, nesciunt, ipsum molestiae laborum distinctio maxime itaque dicta excepturi debitis commodi eaque nobis, suscipit quam dolore?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/vlcsnap-2019-11-30-22h58m01s207.png" alt="2nd img" class="d-block w-100">
+    
+                    <div class="carousel-caption">
+                        <h1>Second Slide</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem praesentium quasi officia. Sed, nesciunt, ipsum molestiae laborum distinctio maxime itaque dicta excepturi debitis commodi eaque nobis, suscipit quam dolore?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/simplex download.jpg" alt="3rd img" class="d-block w-100">
+    
+                    <div class="carousel-caption">
+                        <h1>Thired Slide</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem praesentium quasi officia. Sed, nesciunt, ipsum molestiae laborum distinctio maxime itaque dicta excepturi debitis commodi eaque nobis, suscipit quam dolore?</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- collapes -->
+    <div class="container mt-5">
+    <p> Collapse
+        <a href="#collapseCard1" class="btn btn-success" data-toggle="collapse" role="button">Click Here</a>
+
+        <button class="btn btn-danger" data-toggle="collapse" data-target="#collapseCard2" aria-expanded="false" aria-controls="collapseCard2">Click Here 2</button>
+   <!-- One btn close two divs -->
+        <a href=".multi-collapse" class="btn btn-primary" role="button" data-toggle="collapse">Select both</a>
+    </p>    
+        <div class="collapse multi-collapse" id="collapseCard1">
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero, ratione, eligendi, suscipit quod libero perferendis distinctio similique dolores quas laborum optio doloremque quidem. Necessitatibus vitae vel velit rerum blanditiis!</div>
+        </div>
+        <div class="collapse multi-collapse" id="collapseCard2">
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero, ratione, eligendi, suscipit quod libero perferendis distinctio similique dolores quas laborum optio doloremque quidem. Necessitatibus vitae vel velit rerum blanditiis!</div>
+        </div>
+    </div>
+
+    <!-- accordion -->
+    <div class="container accordion" id="accordion">
+        <h1>Accordion</h1>
+    
+        <div class="card">
+            <div class="card-header">
+                <a href="#cardanswer" class="card-link" data-toggle="collapse">ipsum dolor sit amet consectetur adipisicing
+                    elit ?</a>
+            </div>
+        </div>
+    
+        <div id="cardanswer" class="collapse bg-dark text-light" data-parent="#accordion">
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nisi fugiat voluptas, eveniet inventore iusto! Consequatur ipsam nihil, minima tempora sit iste sed, odit accusantium atque, eum modi? Non,neque.</p>
+            </div>
+        </div>
+    
+        <div class="card" id="accordion2">
+            <div class="card-header">
+                <a href="#cardanswer2" class="card-link" data-toggle="collapse">ipsum dolor sit amet consectetu adipisicing elit ?</a>
+            </div>
+        </div>
+    
+        <div id="cardanswer2" class="collapse bg-dark text-light" data-parent="#accordion2">
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nisi fugiat voluptas, eveniet inventore iusto! Consequatur ipsam nihil, minima tempora sit iste sed, odit accusantium atque, eum modi? Non,neque.</p>
+            </div>
+        </div>
+    
+
+
+    
+    
+    <!-- <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="card-img mt-5 ml-3" src="cap.jpg" alt="cap img" style="background-size: cover;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Harizontal Card Design</h2>
+                        <h6 class="text-muted">This Flim Rleased by Marvel Studios MCU</h6>
+                        <div class="badge badge-pill bg-danger p-2 m-2">Watch Now</div>
+                        <span class="badge badge-pill bg-warning p-2 m-2">Play Online</span>
+                        <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet impedit
+                            porro vel molestiae consequatur laudantium pariatur quia consectetur. Vel totam, voluptatibus at
+                            quo sint et quibusdam perspiciatis earum cum? Laudantium Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nihil soluta, voluptatem est debitis commodi ex autem cumque labore
+                            repellendus modi. Dolore debitis laboriosam ipsam recusandae eius. Praesentium beatae qui
+                            quibusdam odit iure tempora omnis sint eligendi adipisci quaerat pariatur animi, quam laudantium
+                            nisi voluptatibus optio quasi consectetur, dolor debitis fugiat?</div>
+                        <div class="card-footer">
+                            <button class="btn btn-block btn-info">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- breadcrumb -->
+        <!-- <nav class="jumbotron">
+            <ol class="breadcrumb bg-primary">
+                <li class="breadcrumb-item "><a class="text-light" href="#Home">Home</a>
+                </li>
+                <li class="breadcrumb-item active"><a class="text-light" href="About.html">About</a>
+                </li>
+                <li class="breadcrumb-item"><a class="text-light" href="#">Contact</a>
+                </li>
+                <li class="breadcrumb-item"><a class="text-light" href="#">Feedback</a>
+                </li>
+            </ol>
+        </nav> -->
+
+   <!-- <div class="btn-group">
+    <button class="btn btn-dark">HTML</button>
+    <button class="btn btn-dark">CSS</button>
+
+    <div class="btn-group">
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">Javascript</button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="#">Menu-1</a></li>
+            <li><a class="dropdown-item" href="#">Menu-2</a></li>
+            <li><a class="dropdown-item" href="#">Menu-3</a></li>
+            <li><a class="dropdown-item" href="#">Menu-4</a></li>
+        </ul>
+    </div>
+   </div> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
