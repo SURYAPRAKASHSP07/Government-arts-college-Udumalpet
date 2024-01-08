@@ -1,0 +1,384 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.label{
+    padding: 5px;
+}
+body{
+    position: relative;
+    background-color: rgb(195, 195, 195);
+    scroll-behavior: smooth;
+}
+body .btntop{
+    background-color: brown;
+    color: #ffffff;
+    position: sticky;
+    top: 40%;
+    z-index: 1;
+    display:block;
+    width: 45px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+body .btnbtm{
+    background-color: brown;
+    color: #ffffff;
+    position: sticky;
+    top: 50%;
+    z-index: 1;
+    width: 35px;
+    margin-left: 5px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+body a .btntop:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.handbook{
+    position: absolute;
+    background-color: yellow;
+    display: flex;
+    top: 4px;
+    right: 30px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.handbook a{
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.handbook:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("IMG20230228073034.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: 100% 100%;
+    animation: changeImage 15s infinite ease-in;
+}
+
+@keyframes changeImage{
+    0%{
+        background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("IMG20230228073034.jpg");
+    }
+    20%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Govt-Arts-College-Udumalpet.jpeg");
+    }
+    40%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Screenshot_2024-01-03-14-56-01-41_680d03679600f7af0b4c700c6b270fe7.jpg");
+    }
+    60%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("ncc-3.jpg");
+    }
+    80%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("pongal.jpeg");
+    }
+    100%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("IMG_20240103_143235.jpg");
+    }
+}
+.label{
+    background-color: black;
+    color: yellow;
+    padding: 3px;
+    font-size: 17px;
+}
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100vw;
+    margin-top: -6px;
+}
+label.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+.header nav span{
+    display: none;
+}
+nav ul{
+    float: right;
+    margin-right:30px;
+}
+nav ul li{
+    display: inline;
+    line-height: 100px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 77, 77);
+    border-radius: 20px;    
+}
+nav ul .slide{
+    left: 0;
+    transition: 2s linear;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    line-height: 100px;
+}
+nav ul .slide{
+    left: 0;
+    transition: 2s linear;
+}
+@media (min-width:425px) {
+    .header{
+        background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("couples1.jpeg");
+    }
+}
+@media (max-width:914px) {
+    nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        text-align: center;
+        padding: 0;
+        top: 0;
+        margin-top: 0px;
+        left: -100%;
+        z-index: 1;
+    }
+    .header nav ul span{
+        display: block;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin: 20px 20px;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    nav ul li {
+        display: block;
+        width: 100vw;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        color:white;
+        font-size: 18px;
+        padding: 10px;
+    }
+    nav ul li a:hover{
+        color: #ffffff;
+    }
+    .slide{
+        left: 0;
+        transition: 2s linear;
+    }
+    .hamburger{
+        float: right;
+        margin-top: 50px;
+        margin-right: 15px;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        height: 5px;
+        width: 40px;
+        border-radius: 4px;
+        background-color: aliceblue;
+        margin-bottom: 5px;
+        display: block;
+    }
+}
+
+.marqueeevent{
+    background-color: #05487b;
+    color: white;
+}
+
+.text-content{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-content h2{  
+    color: orangered;  
+}
+.text-content h3{    
+    color: yellow;
+}
+
+.aboutusimg{
+    min-height: 150px;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.8),rgba(5, 11, 35, 0.936)),url("Govt-Arts-College2-Udumalpet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.aboutusimg:hover{
+    background-image:linear-gradient(270deg,rgba(96, 100, 114, 0.8),rgba(5, 11, 35, 0.936)),url("Govt-Arts-College2-Udumalpet.jpeg");
+    transition: 1s linear;
+}
+.aboutusimg h1{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 40px;
+}
+.aboutcontent{
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: justify;
+}
+.aboutcontent:hover{
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.5), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.5s ease;
+}
+.table:hover{
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.5), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.5s ease;
+}
+.nccimg:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+.nccvideo:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+.ncc .nccb{
+    background: linear-gradient(-270deg,red,rgb(18, 18, 67),blue
+    );
+    height: 10px;
+    width: 110px;
+    z-index: 3;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nccb:hover{
+    background-color: rgb(255, 0, 0);
+    height: 10px;
+    width: 280px;
+    transition: 1s linear;
+}
+.ncc .nccs{
+    background: linear-gradient(-270deg,red,rgb(18, 18, 67),blue
+    );
+    height: 10px;
+    width: 50px;
+    z-index: 3;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nccs:hover{
+    background-color: rgb(255, 0, 0);
+    height: 10px;
+    width: 90px;
+    transition: 1s linear;
+}
+.dept .card-img{
+    height: 200px;
+}
+.dept .card-img:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+
+.downloadfrom{
+    text-decoration: none;
+}
+#downloads a{
+    color: rgb(255, 255, 255);
+}
+.downloadfrom:hover{
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.footer .footerimg{
+    cursor: pointer;
+}
+.footer .footerimg:hover{
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.5), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.5s ease;
+}
+.footer .Quick_Links ul li .quicklinks{
+    text-decoration: none;
+}
+.footer .Quick_Links ul li .quicklinks:hover{
+    margin-left: 6px;
+    color: #05487b;
+    transition: 1s ease-in-out;
+}
+.footer .Quick_Links ul li .quicklinks:hover{
+    color: #05487b;
+    transition: 1s ease-in-out;
+}
+.footer .Quick_Links ul li{
+    list-style-type: none;
+}
+
+#Reviews .row .review:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
