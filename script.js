@@ -17,7 +17,7 @@ const clock = document.querySelector(".clock");
 
 
 const currentDate = new Date();
-const liveTime = currentDate.getDate()+"/"+currentDate.getMonth()+1+"/"+currentDate.getFullYear()+", ";
+const liveTime = currentDate.getDate()+"/"+currentDate.getMonth()+"/"+currentDate.getFullYear()+", ";
 
 const daysnum = currentDate.getDay();
 console.log(daysnum);
